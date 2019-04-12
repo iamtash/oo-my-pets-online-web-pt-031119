@@ -4,10 +4,12 @@ class Owner
   attr_reader :name
 
   @@all = []
+  @@count = 0
 
   def initialize(name)
     @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
+    @@count += 1
   end
 
   def self.all
