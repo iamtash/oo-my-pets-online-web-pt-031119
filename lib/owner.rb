@@ -24,6 +24,10 @@ class Owner
     @@count = 0
   end
 
+  def species(species)
+    species
+  end
+
   def buy_cat(name)
     cat = Cat.new(name)
     pets[:cats] << cat
