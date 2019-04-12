@@ -21,7 +21,7 @@ class Owner
   end
 
   def self.reset_all
-    self.all.clear
+    count = 0
   end
 
   def buy_cat(name)
